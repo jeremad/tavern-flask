@@ -30,13 +30,7 @@ class FlaskTestSession:
     def __exit__(self, *args):
         pass
 
-    def make_request(
-        self, url, verify, method, params=None, json=None, data=None, **kwargs
-    ):
-        if kwargs.get("stream"):
-            raise NotImplementedError
-        kwargs.pop("stream")
-
+    def make_request(self, url, method, params=None, json=None, data=None, **kwargs):
         if data and json:
             raise NotImplementedError
 
