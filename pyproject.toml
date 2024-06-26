@@ -8,7 +8,7 @@ packages = [{include = "tavern_flask"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-tavern = "^2.3,<2.10"
+tavern = "^2.11.0"
 PyYAML = "^6.0"
 Flask = "^3.0"
 python-box = "^6.1"
